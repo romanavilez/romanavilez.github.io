@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Oswald:wght@200..700&family=Staatliches&display=swap');
 
-
 :root {
     --primary-color: #10E5B2;
     --primary-accent: #acfa70;
     --secondary-color: #FF6F52;
     --tertiary-color: #0B0C15;
 }
+
+/* All pages */
 
 html, body {
     margin: 0;
@@ -42,6 +43,7 @@ nav {
 }
 
 nav a {
+    position: relative;
     font-size: larger;
     text-decoration: none;
     color: white;
@@ -49,6 +51,40 @@ nav a {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    transition: all 300ms ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav .overall-tab::after {
+    background-color: var(--primary-color);
+}
+
+nav .user-tab::after {
+    background-color: #53ee9d;
+}
+
+nav .experience-tab::after {
+    background-color: #80f586;
+}
+
+nav .bibliography-tab::after {
+    background-color: var(--primary-accent);
+}
+
+nav a.active::after {
+    width: 100%;
 }
 
 /* Landing Page */
@@ -78,19 +114,18 @@ main {
 main .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 78vw;
+    height: 32rem;
 }
 
-main .main-container:hover .app-name::after {
-    content: "";
-    left: 0%;
-    position: absolute;
-    background-image: linear-gradient(to right, var(--primary-color), var(--primary-accent));
-    width: 15rem;
-    height: 5rem;
-    mix-blend-mode: darken;
-    transition: width 300ms ease-in-out;
+main .main-container .project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 main .main-container .app-name {
@@ -107,12 +142,23 @@ main .main-container .app-name {
     width: 15rem;
 }
 
-main .main-container .app-name::after {
-    content: "";
-    width: 0;
+main .main-container:hover .project-title::after {
+    width: 100%;
 }
 
-main .main-container .project-title {
+main .main-container .project-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--primary-color), var(--primary-accent));
+    mix-blend-mode: darken;
+    transition: all 500ms ease-in-out;
+    background-color: red;
+}
+
+main .main-container .sub-title {
     text-align: center;
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
@@ -138,6 +184,7 @@ main .main-container .page-buttons {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    max-width: 78vw;
 }
 
 main .main-container .page-buttons a {
