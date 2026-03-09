@@ -29,12 +29,28 @@ header {
 }
 
 header .title {
+    position: relative;
     font-size: 40px;
     color: white;
     text-decoration: none;
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+header .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--primary-color), var(--primary-accent));
+    mix-blend-mode: darken;
+    transition: all 500ms ease-in-out;
+}
+
+header .title:hover::after {
+    width: 100%;
 }
 
 nav {
@@ -241,4 +257,36 @@ main .main-container .page-buttons #experience-btn:hover {
 
 main .main-container .page-buttons #bibliography-btn:hover {
     background-color: var(--primary-accent);
+}
+
+/* User Page */
+.tab-main .main-container{
+    /* background-color: #10E5B2; */
+    width: 78vw;
+}
+
+.main-container .user-section {
+    width: 100%;
+    /* background-color: #FF6F52; */
+}
+
+.user-section .section-header {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.user-section .section-body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: large;
+    color: white;
+}
+
+/* Bibliography Page */
+.main-container .bib-section {
+    width: 78vw;
 }
