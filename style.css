@@ -8,15 +8,7 @@
 }
 
 /* All pages */
-
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
     background-color: var(--tertiary-color);
 }
 
@@ -26,6 +18,11 @@ header {
     justify-content: space-between;
     margin: 0;
     padding: 2rem 4rem;
+    /* position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box; */
+    background-color: var(--tertiary-color);
 }
 
 header .title {
@@ -103,28 +100,11 @@ nav a.active::after {
     width: 100%;
 }
 
-/* Landing Page */
-.home-header {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.home-header .welcome-text {
-    margin: 0;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: white;
-}
-
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 main .main-container {
@@ -132,152 +112,23 @@ main .main-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 78vw;
-    height: 32rem;
-}
-
-main .main-container .project-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
-}
-
-main .main-container .app-name {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 60px;
-    padding: 0;
-    margin: 0;
-    width: 15rem;
-}
-
-main .main-container:hover .project-title::after {
-    width: 100%;
-}
-
-main .main-container .project-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-image: linear-gradient(to right, var(--primary-color), var(--primary-accent));
-    mix-blend-mode: darken;
-    transition: all 500ms ease-in-out;
-    background-color: red;
-}
-
-main .main-container .sub-title {
-    text-align: center;
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-main .main-container .project-description {
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: xx-large;
-    color: white;
-    margin-top: 0;
-}
-
-main .main-container .page-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 78vw;
-}
-
-main .main-container .page-buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: #121212;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    height: 5rem;
-    width: 17rem;
-    border-radius: 10px;
-    font-size: 21px;
-    transition: all 300ms ease-in-out;
-}
-
-main .main-container .page-buttons #overall-btn {
-    border: 4px solid var(--primary-color);
-}
-
-main .main-container .page-buttons #user-btn {
-    border: 4px solid #53ee9d;
-}
-
-main .main-container .page-buttons #experience-btn {
-    border: 4px solid #80f586;
-}
-
-main .main-container .page-buttons #bibliography-btn {
-    border: 4px solid var(--primary-accent);
-}
-
-main .main-container .page-buttons a:hover {
-    scale: 1.1;
-    color: #121212;
-}
-
-main .main-container .page-buttons #overall-btn:hover {
-    background-color: var(--primary-color);
-}
-
-main .main-container .page-buttons #user-btn:hover {
-    background-color: #53ee9d;
-}
-
-main .main-container .page-buttons #experience-btn:hover {
-    background-color: #80f586;
-}
-
-main .main-container .page-buttons #bibliography-btn:hover {
-    background-color: var(--primary-accent);
-}
-
-/* User Page */
-.tab-main .main-container{
-    /* background-color: #10E5B2; */
     width: 78vw;
 }
 
+/* User Page */
 .main-container .user-section {
     width: 100%;
     /* background-color: #FF6F52; */
 }
 
-.user-section .section-header {
+.main-container .section-header {
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
 }
 
-.user-section .section-body {
+.main-container .section-body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -288,5 +139,5 @@ main .main-container .page-buttons #bibliography-btn:hover {
 
 /* Bibliography Page */
 .main-container .bib-section {
-    width: 78vw;
+    width: 100%;
 }
