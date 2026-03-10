@@ -143,6 +143,26 @@ main .main-container {
     width: 100%;
 }
 
+.bib-section a {
+    color: var(--primary-accent);
+}
+
+.bib-section .section-header {
+    position: relative;
+    width: fit-content;
+}
+
+.bib-section .section-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-accent);
+    width: 100%;
+    height: 50%;
+    mix-blend-mode: darken;
+}
+
 /* Overall Capstone Page */
 .main-container .overall-section {
     width: 100%;
