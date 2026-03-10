@@ -102,34 +102,26 @@ nav a.active::after {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5rem;
-    /* height: 100vh; */
-}
-
-main .main-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding: 0 5rem;
 }
 
 /* User Page */
-.main-container .user-section {
+.user-section {
     width: 100%;
     /* background-color: #FF6F52; */
 }
 
-.main-container .section-header {
+.section-header {
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
 }
 
-.main-container .section-body {
+.section-body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -139,7 +131,7 @@ main .main-container {
 }
 
 /* Bibliography Page */
-.main-container .bib-section {
+.bib-section {
     width: 100%;
 }
 
@@ -164,11 +156,55 @@ main .main-container {
 }
 
 /* Overall Capstone Page */
-.main-container .overall-section {
+.overall-section {
     width: 100%;
 }
 
 /* Capstone Experience Page */
-.main-container .experience-section {
+.experience-section {
     width: 100%;
+}
+
+#child-interface .before img {
+    width: 100%;
+}
+
+#child-interface .after {
+    display: flex;
+    gap: 1rem;
+}
+
+#child-interface .after img {
+    width: 33%;
+}
+
+#parent-interface .before img {
+    width: 100%;
+}
+
+#login-signup .before img {
+    width: 80%;
+}
+
+#login-signup .after img {
+    width: 40%;
+}
+
+#search-navigation .section-body {
+    width: 100%;
+}
+
+#search-navigation .section-body div {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#search-navigation .code {
+    width: 70%;
+}
+
+#search-navigation .design {
+    width: 30%;
 }

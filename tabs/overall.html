@@ -17,155 +17,153 @@
         </nav>
     </header>
     <main>
-        <div class="main-container">
-            <div class="overall-section">
-                <h1 class="section-header">Why a Child Safety App</h1>
-                <div class="section-body">
-                    <p>
-                        When I started to think about my capstone, one thing was clear: I wanted to build an app that would make the world 
-                        a <b>safer place</b>. It couldn't just be any app; it had to be <b>different</b> and something that society would 
-                        actually want to use. The problem was that there are already so many apps out there that focus on safety, so chances 
-                        were that if I thought of something, it would already exist. As I was brainstorming, I remembered an app that I had 
-                        worked on during a hackathon at UWB; it was an app that would reroute a user through a safer path if they were 
-                        approaching an unsafe location. So, then I thought: what if I built something similar but with a different goal? Then 
-                        an idea came to mind: an app that would keep children out of danger, with the same rerouting mechanic, but instead be 
-                        a centralized place for parents to keep in touch with all their children.
-                    </p>
-                    <p>
-                        The idea was there, but there was still something that this app needed, something that would make this app stand out. 
-                        I liked the idea of the end users being parents and children, but rerouting is something that is already out there, so 
-                        I decided to ditch that idea. That's when I thought: what if I could create an app that gave <b>children autonomy</b> 
-                        while still keeping them safe? An app that would give children the freedom to explore while still providing parents 
-                        with the tools they need to keep their children safe. And that's how ChildWay was born.
-                    </p>
-                </div>
-            <div class="overall-section">
-                <h1 class="section-header">Detours and Roadblocks</h1>
-                <div class="section-body">
-                    <p>
-                        As I worked on this capstone, there were some challenges that shaped my learning. The biggest challenge I ran into was 
-                        <b>Mapbox not being compatible with Expo Go</b>. I took a while trying to debug the issue and I had no clue why a simple Map 
-                        couldn't be rendered onto my UI. It was not until I did some research and found that the problem was Mapbox needs to 
-                        run native code which is something that Expo Go doesn't support. As a result, I installed Android Studio on my laptop 
-                        to run Android native code, but then I ran into another issue. This time, I decided to do some web searching and found 
-                        out that React Native and Expo cannot run anything higher than JDK 17, which seemed a little weird, but I went ahead 
-                        and installed it. After that, I was able to run the app on my phone and see the Map. 
-                    </p>
-                    <p>
-                        Moving on to more of a data problem and less of a technical one; I had issues <b>collecting the data I needed to train a 
-                        machine learning model</b>. The main purpose of the model was to get safety indicator data (time of day, distance from 
-                        home, direction changes, etc.) as inputs and output a safety score. The problem was that this data is not something 
-                        that is publicly available. The only way for me to get my hands on this data was for me to generate it myself, but there 
-                        wasn't any way of doing this without there being some level of bias on what is safe and what isn't. As a result, I 
-                        decided not to continue with safety indicators, because if I did, the model that would be trained and tested would be 
-                        inaccurate and unreliable since the quality and amount of data was not there. 
-                    </p>
-                </div>
+        <div class="overall-section">
+            <h1 class="section-header">Why a Child Safety App</h1>
+            <div class="section-body">
+                <p>
+                    When I started to think about my capstone, one thing was clear: I wanted to build an app that would make the world 
+                    a <b>safer place</b>. It couldn't just be any app; it had to be <b>different</b> and something that society would 
+                    actually want to use. The problem was that there are already so many apps out there that focus on safety, so chances 
+                    were that if I thought of something, it would already exist. As I was brainstorming, I remembered an app that I had 
+                    worked on during a hackathon at UWB; it was an app that would reroute a user through a safer path if they were 
+                    approaching an unsafe location. So, then I thought: what if I built something similar but with a different goal? Then 
+                    an idea came to mind: an app that would keep children out of danger, with the same rerouting mechanic, but instead be 
+                    a centralized place for parents to keep in touch with all their children.
+                </p>
+                <p>
+                    The idea was there, but there was still something that this app needed, something that would make this app stand out. 
+                    I liked the idea of the end users being parents and children, but rerouting is something that is already out there, so 
+                    I decided to ditch that idea. That's when I thought: what if I could create an app that gave <b>children autonomy</b> 
+                    while still keeping them safe? An app that would give children the freedom to explore while still providing parents 
+                    with the tools they need to keep their children safe. And that's how ChildWay was born.
+                </p>
             </div>
-            <div class="overall-section">
-                <h1 class="section-header">Success Along the Way</h1>
-                <div class="section-body">
-                    <p>
-                        There were a few moments of success during my capstone that were meaningful: the biggest being <b>turning a sketch of a
-                        child interface into an actual working UI</b>. It might not seem like much, but there is something special about turning 
-                        an idea into an actual working model. It is sort of like a recipe; you can have the recipe and all the ingredients, 
-                        but until you actually put everything together and cook it, you won't know if it will turn out the way you wanted it 
-                        to. So, when I was able to take my sketch, turn it into a working UI, and see that it looked the way I wanted it to,
-                        it felt great. It was a moment of validation that I was on the right track because I knew that if I could turn a 
-                        sketch into a working UI, then I could turn my entire app into a working product.
-                    </p>
-                    <p>
-                        Another moment of success was <b>learning new technologies</b>. I had no experience with mobile app development before this 
-                        capstone, so learning how to use react native and expo was a bit daunting at first, but learning it wasn't as hard as
-                        I had originally thought. Because of my prior experience with react, I was able to pick up react native pretty quickly, 
-                        and the same goes for expo. I also had to learn how to use Mapbox, which was a bit more difficult because of the native 
-                        code problem, but I was able to figure it out and get it working in the end. Along with this, I had to learn how to use
-                        two different APIs from Mapbox, the geocoding API and the search box API, which wasn't too hard; the main reason being
-                        that the documentation for both APIs was really good and easy to understand. Overall, learning new technologies during 
-                        this capstone opened up a whole new world of possibilities for me in terms of what I can create and build in the future.
-                    </p>
-                </div>
+        <div class="overall-section">
+            <h1 class="section-header">Detours and Roadblocks</h1>
+            <div class="section-body">
+                <p>
+                    As I worked on this capstone, there were some challenges that shaped my learning. The biggest challenge I ran into was 
+                    <b>Mapbox not being compatible with Expo Go</b>. I took a while trying to debug the issue and I had no clue why a simple Map 
+                    couldn't be rendered onto my UI. It was not until I did some research and found that the problem was Mapbox needs to 
+                    run native code which is something that Expo Go doesn't support. As a result, I installed Android Studio on my laptop 
+                    to run Android native code, but then I ran into another issue. This time, I decided to do some web searching and found 
+                    out that React Native and Expo cannot run anything higher than JDK 17, which seemed a little weird, but I went ahead 
+                    and installed it. After that, I was able to run the app on my phone and see the Map. 
+                </p>
+                <p>
+                    Moving on to more of a data problem and less of a technical one; I had issues <b>collecting the data I needed to train a 
+                    machine learning model</b>. The main purpose of the model was to get safety indicator data (time of day, distance from 
+                    home, direction changes, etc.) as inputs and output a safety score. The problem was that this data is not something 
+                    that is publicly available. The only way for me to get my hands on this data was for me to generate it myself, but there 
+                    wasn't any way of doing this without there being some level of bias on what is safe and what isn't. As a result, I 
+                    decided not to continue with safety indicators, because if I did, the model that would be trained and tested would be 
+                    inaccurate and unreliable since the quality and amount of data was not there. 
+                </p>
             </div>
-            <div class="overall-section">
-                <h1 class="section-header">Feedback That Steered the App</h1>
-                <div class="section-body">
-                    <p>
-                        There were various people who guided me during this capstone: the first being my <b>capstone instructor, Laurie Anderson</b>. 
-                        At the start of this capstone, I was having trouble deciding on what technology to use for map rendering, and Professor
-                        Anderson recommended I start with Google Maps since it is a more popular and widely used technology and later look for 
-                        other options if I wanted to. I took her advice and started with Google Maps, but I quickly realized that it was not the 
-                        best option for my app because of the pricing and customization limitations. After doing some research, I found Mapbox, 
-                        which was a much better option for my app. Another piece of advice that Professor Anderson gave me was for my app to not 
-                        be aimed at children, even though my main goal is child autonomy, the app is still for parents. I pondered about this for
-                        a while, until I realized she was totally right; the app is for both children and parents but giving parents the tools
-                        they need to keep their children safe is the main goal, with child autonomy as a sub goal. 
-                    </p>
-                    <p>
-                        My second guide was my <b>expert, Professor Jeff Stride</b>; he was the one that encouraged me to move from using safety 
-                        indicators to instead using walking simulations to check if the path taken is not normal or if the child isn't where they 
-                        are usually at some time. I would still be using a machine learning model to do this but would be more focused on anomaly 
-                        detection. I was a little reluctant at first since I had already generated some data and had started building a random 
-                        forest regression model, but I decided to go for it. The main reason I made the change was because he said that without 
-                        real data, training a model to be accurate is super difficult; at least with anomaly detection and walking paths, there 
-                        is no bias or subjectiveness in what is safe or not, it is simply a matter of if there is an anomaly or not. 
-                    </p>
-                    <p>
-                        My last guides were my <b>stakeholders: friends and family</b>. I showed them my app and got their feedback on the UI and the 
-                        overall concept. The main feedback I got was that they didn't like the idea of only being able to see their child's 
-                        location when they were potentially unsafe or in danger. They wanted to be able to see their child's location at all 
-                        times, which is something that I had originally thought about but thought would go against the whole child autonomy
-                        aspect of the app. After thinking about it, I realized that always having access to their child's location didn't 
-                        necessarily mean that child autonomy would no longer hold; it just meant that parents would have more information 
-                        and tools to keep their children safe, and I would have to find more ways to give children autonomy in other aspects 
-                        of the app.
-                    </p>
-                </div>
+        </div>
+        <div class="overall-section">
+            <h1 class="section-header">Success Along the Way</h1>
+            <div class="section-body">
+                <p>
+                    There were a few moments of success during my capstone that were meaningful: the biggest being <b>turning a sketch of a
+                    child interface into an actual working UI</b>. It might not seem like much, but there is something special about turning 
+                    an idea into an actual working model. It is sort of like a recipe; you can have the recipe and all the ingredients, 
+                    but until you actually put everything together and cook it, you won't know if it will turn out the way you wanted it 
+                    to. So, when I was able to take my sketch, turn it into a working UI, and see that it looked the way I wanted it to,
+                    it felt great. It was a moment of validation that I was on the right track because I knew that if I could turn a 
+                    sketch into a working UI, then I could turn my entire app into a working product.
+                </p>
+                <p>
+                    Another moment of success was <b>learning new technologies</b>. I had no experience with mobile app development before this 
+                    capstone, so learning how to use react native and expo was a bit daunting at first, but learning it wasn't as hard as
+                    I had originally thought. Because of my prior experience with react, I was able to pick up react native pretty quickly, 
+                    and the same goes for expo. I also had to learn how to use Mapbox, which was a bit more difficult because of the native 
+                    code problem, but I was able to figure it out and get it working in the end. Along with this, I had to learn how to use
+                    two different APIs from Mapbox, the geocoding API and the search box API, which wasn't too hard; the main reason being
+                    that the documentation for both APIs was really good and easy to understand. Overall, learning new technologies during 
+                    this capstone opened up a whole new world of possibilities for me in terms of what I can create and build in the future.
+                </p>
             </div>
-            <div class="overall-section">
-                <h1 class="section-header">Changes I'd Make if I Could Start Over</h1>
-                <div class="section-body">
-                    <p>
-                        Now that I am halfway through this capstone, I came to realize that I could have approached this project a little 
-                        differently. For starters, even though I am proud of the child interface that I built, I wish I had at least <b>started
-                        implementing the backend</b>. I have been so focused on the frontend and making sure that the UI looks good and is 
-                        functional that the backend didn't even cross my mind up until now. Getting the front end out of the way early on isn't
-                        a bad thing, but without the actual functionality of the app implemented, there is not much a front end can do on its own. 
-                        If I had made a simple front end and then started implementing the backend, I would have been able to connect the two
-                        and have a working app much sooner, which would have allowed me to get feedback on the app as a whole and not just the UI.
-                        In the end, I feel like it is much more important for the functionality of the app to be perfect, especially since 
-                        that is the main aspect of an app, with the UI second. 
-                    </p>
-                    <p>
-                        Something I would've changed completely was <b>the way I learned React Native</b>: I watched a long YouTube tutorial that showed 
-                        how to build a mobile app with React Native. If I had known that React Native was basically react.js with small changes, I 
-                        would've just stuck with the React Native docs and compared the syntax. Thankfully I didn't make the same mistake when 
-                        learning TypeScript because all JavaScript code is valid TypeScript code, the only difference being that TypeScript has 
-                        typing and additional features. 
-                    </p>
-                </div>
-            <div class="overall-section">
-                <h1 class="section-header">The Road Ahead</h1>
-                <div class="section-body">
-                    <p>
-                        Moving forward, there are a few things I want to focus on. The first being <b>implementing the back end</b>, which would consist 
-                        of the following: (1) authenticating users so that the correct version of the app can be shown to each user; (2) build an API 
-                        that can enable communication between the parent and the child; (3) build an anomaly detection machine learning model to 
-                        learn a child's normal routes and patterns and use this data to detect unusual behavior; and (4) all other features such as 
-                        setting up virtual boundaries, SOS alert functionality, and notifications/alerts.     
-                    </p>
-                    <p>
-                        Along with this, I need to <b>build a parent UI</b>. I will probably start by building something simple so that I can focus 
-                        on the backend, while still being able to test the app. After the backend is implemented, I can go back and make the UI 
-                        look better and add more features to it. I also want to do more user testing and get feedback from parents and children to 
-                        see what they like and don't like about the app and what features they would want to see in the future. 
-                    </p>
-                    <p>
-                        Overall, I am really happy with how this capstone is going so far, and I am excited to see how the app turns out in the end. 
-                        I know that there will be a lot of challenges along the way, but I am ready to face them and learn from them. I also know 
-                        that this app has the potential to make a real difference in the world, and that is what motivates me to keep working on it 
-                        and make it the best it can be.
-                    </p>
-                </div>
+        </div>
+        <div class="overall-section">
+            <h1 class="section-header">Feedback That Steered the App</h1>
+            <div class="section-body">
+                <p>
+                    There were various people who guided me during this capstone: the first being my <b>capstone instructor, Laurie Anderson</b>. 
+                    At the start of this capstone, I was having trouble deciding on what technology to use for map rendering, and Professor
+                    Anderson recommended I start with Google Maps since it is a more popular and widely used technology and later look for 
+                    other options if I wanted to. I took her advice and started with Google Maps, but I quickly realized that it was not the 
+                    best option for my app because of the pricing and customization limitations. After doing some research, I found Mapbox, 
+                    which was a much better option for my app. Another piece of advice that Professor Anderson gave me was for my app to not 
+                    be aimed at children, even though my main goal is child autonomy, the app is still for parents. I pondered about this for
+                    a while, until I realized she was totally right; the app is for both children and parents but giving parents the tools
+                    they need to keep their children safe is the main goal, with child autonomy as a sub goal. 
+                </p>
+                <p>
+                    My second guide was my <b>expert, Professor Jeff Stride</b>; he was the one that encouraged me to move from using safety 
+                    indicators to instead using walking simulations to check if the path taken is not normal or if the child isn't where they 
+                    are usually at some time. I would still be using a machine learning model to do this but would be more focused on anomaly 
+                    detection. I was a little reluctant at first since I had already generated some data and had started building a random 
+                    forest regression model, but I decided to go for it. The main reason I made the change was because he said that without 
+                    real data, training a model to be accurate is super difficult; at least with anomaly detection and walking paths, there 
+                    is no bias or subjectiveness in what is safe or not, it is simply a matter of if there is an anomaly or not. 
+                </p>
+                <p>
+                    My last guides were my <b>stakeholders: friends and family</b>. I showed them my app and got their feedback on the UI and the 
+                    overall concept. The main feedback I got was that they didn't like the idea of only being able to see their child's 
+                    location when they were potentially unsafe or in danger. They wanted to be able to see their child's location at all 
+                    times, which is something that I had originally thought about but thought would go against the whole child autonomy
+                    aspect of the app. After thinking about it, I realized that always having access to their child's location didn't 
+                    necessarily mean that child autonomy would no longer hold; it just meant that parents would have more information 
+                    and tools to keep their children safe, and I would have to find more ways to give children autonomy in other aspects 
+                    of the app.
+                </p>
+            </div>
+        </div>
+        <div class="overall-section">
+            <h1 class="section-header">Changes I'd Make if I Could Start Over</h1>
+            <div class="section-body">
+                <p>
+                    Now that I am halfway through this capstone, I came to realize that I could have approached this project a little 
+                    differently. For starters, even though I am proud of the child interface that I built, I wish I had at least <b>started
+                    implementing the backend</b>. I have been so focused on the frontend and making sure that the UI looks good and is 
+                    functional that the backend didn't even cross my mind up until now. Getting the front end out of the way early on isn't
+                    a bad thing, but without the actual functionality of the app implemented, there is not much a front end can do on its own. 
+                    If I had made a simple front end and then started implementing the backend, I would have been able to connect the two
+                    and have a working app much sooner, which would have allowed me to get feedback on the app as a whole and not just the UI.
+                    In the end, I feel like it is much more important for the functionality of the app to be perfect, especially since 
+                    that is the main aspect of an app, with the UI second. 
+                </p>
+                <p>
+                    Something I would've changed completely was <b>the way I learned React Native</b>: I watched a long YouTube tutorial that showed 
+                    how to build a mobile app with React Native. If I had known that React Native was basically react.js with small changes, I 
+                    would've just stuck with the React Native docs and compared the syntax. Thankfully I didn't make the same mistake when 
+                    learning TypeScript because all JavaScript code is valid TypeScript code, the only difference being that TypeScript has 
+                    typing and additional features. 
+                </p>
+            </div>
+        <div class="overall-section">
+            <h1 class="section-header">The Road Ahead</h1>
+            <div class="section-body">
+                <p>
+                    Moving forward, there are a few things I want to focus on. The first being <b>implementing the back end</b>, which would consist 
+                    of the following: (1) authenticating users so that the correct version of the app can be shown to each user; (2) build an API 
+                    that can enable communication between the parent and the child; (3) build an anomaly detection machine learning model to 
+                    learn a child's normal routes and patterns and use this data to detect unusual behavior; and (4) all other features such as 
+                    setting up virtual boundaries, SOS alert functionality, and notifications/alerts.     
+                </p>
+                <p>
+                    Along with this, I need to <b>build a parent UI</b>. I will probably start by building something simple so that I can focus 
+                    on the backend, while still being able to test the app. After the backend is implemented, I can go back and make the UI 
+                    look better and add more features to it. I also want to do more user testing and get feedback from parents and children to 
+                    see what they like and don't like about the app and what features they would want to see in the future. 
+                </p>
+                <p>
+                    Overall, I am really happy with how this capstone is going so far, and I am excited to see how the app turns out in the end. 
+                    I know that there will be a lot of challenges along the way, but I am ready to face them and learn from them. I also know 
+                    that this app has the potential to make a real difference in the world, and that is what motivates me to keep working on it 
+                    and make it the best it can be.
+                </p>
             </div>
         </div>
     </main>
