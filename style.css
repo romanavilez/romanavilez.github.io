@@ -207,17 +207,43 @@ main {
     width: 100%;
 }
 
+.experience-section .section-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-section .before {
+    width: 48%;
+}
+
+.experience-section .after {
+    width: 48%;
+}
+
+.experience-section img {
+    border-radius: 10px;
+}
+
+#architectural-diagram img {
+    width: 100%;
+}
+
 #child-interface .before img {
     width: 100%;
 }
 
 #child-interface .after {
     display: flex;
-    gap: 1rem;
+    width: 50%;
 }
 
 #child-interface .after img {
-    width: 33%;
+    width: 34%;
+}
+
+
+#login-signup .after {
+    display: flex;
 }
 
 #parent-interface .before img {
@@ -225,15 +251,16 @@ main {
 }
 
 #login-signup .before img {
-    width: 80%;
+    width: 100%;
 }
 
 #login-signup .after img {
-    width: 40%;
+    width: 50%;
 }
 
 #search-navigation .section-body {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #search-navigation .section-body div {
@@ -244,7 +271,7 @@ main {
 }
 
 #search-navigation .code {
-    width: 70%;
+    width: 68%;
 }
 
 #search-navigation .design {
