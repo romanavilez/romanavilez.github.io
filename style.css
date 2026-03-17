@@ -207,6 +207,14 @@ main {
     width: 100%;
 }
 
+.experience-section h2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: larger;
+}
+
 .experience-section .section-body {
     display: flex;
     justify-content: space-between;
@@ -228,22 +236,34 @@ main {
     width: 100%;
 }
 
-#child-interface .before img {
+#child-interface .section-body,
+#parent-interface .section-body {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#child-interface .before,
+#parent-interface .before {
+    width: 75%;
+}
+
+#child-interface .before img,
+#parent-interface .before img {
     width: 100%;
 }
 
-#child-interface .after {
+#child-interface .after,
+#parent-interface .after {
+    width: 75%;
+}
+
+#child-interface .after .images {
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 
 #child-interface .after img {
     width: 34%;
-}
-
-
-#login-signup .after {
-    display: flex;
 }
 
 #parent-interface .before img {
@@ -251,6 +271,11 @@ main {
 }
 
 #login-signup .before img {
+    width: 100%;
+}
+
+#login-signup .after .images {
+    display: flex;
     width: 100%;
 }
 
@@ -263,7 +288,7 @@ main {
     flex-direction: column;
 }
 
-#search-navigation .section-body div {
+#search-navigation .section-body .images {
     display: flex;
     margin-bottom: 2rem;
     justify-content: space-between;
