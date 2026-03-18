@@ -86,10 +86,10 @@
                 <div class="after">
                     <h2>Current Parent Interface</h2>
                     <p>
-                        At the moment I have not been able to implement the frontend for the parent, but there are some changes that will be made to the 
-                        parent interface. For one, a map with all children's locations will always be available - not only when the child is unsafe or 
-                        in danger. In addition, there will no longer be safety scores, as already mentioned, so that will be removed from the children 
-                        tab. A profile tab will also be added just like in the children interface, for account details. 
+                        At the moment I have not been able to implement the frontend for the parent, but there are some changes I have thought of for 
+                        the parent interface. For one, a map with all children's locations is always available - not only when the child is unsafe or 
+                        in danger. Additionally, safety scores have been removed from the children tab, as already mentioned. Finally, a profile 
+                        tab is added to handle account details, just like in the children interface.  
                     </p>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                     <h2>Search Box API</h2>
                     <p>
                         One of the features of the map tab is for a child to have the autonomy to choose where they would like to go. When the child 
-                        searches for a location by name or address, a list of suggestions that match the search will appear sorted by estimated time 
+                        searches for a location by name or address, a list of suggestions that match the search appear sorted by estimated time 
                         of arrival (eta). To do this, Mapbox Search Box API was used to generate a list of the five closest locations to the user 
                         that match the search query. Then, the name, eta, and address of the suggestions were stored and rendered as a FlatList 
                         for the child to select their preferred location.
