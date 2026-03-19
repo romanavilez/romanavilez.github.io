@@ -9,8 +9,13 @@
 }
 
 /* All pages */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--tertiary-color);
+    padding-bottom: 30px;
 }
 
 header {
@@ -107,6 +112,54 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
+}
+
+.scroll-top-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-top-container i {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-top {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 300ms ease-in-out;
+}
+
+.scroll-top:hover {
+    color: #0B0C15;
+    border-color: #0B0C15;
+    scale: 1.1;
+}
+
+#scroll-top-overall:hover {
+    background-color: var(--primary-color);
+}
+
+#scroll-top-user:hover {
+    background-color: #53ee9d;
+}
+
+#scroll-top-exp:hover {
+    background-color: #80f586;
+}
+
+#scroll-top-bib:hover {
+    background-color: var(--primary-accent);
 }
 
 /* User Page */
