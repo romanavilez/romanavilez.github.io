@@ -27,6 +27,7 @@ header {
     /* position: sticky;
     top: 0;
     width: 100%;
+    z-index: 10;
     box-sizing: border-box; */
     background-color: var(--tertiary-color);
 }
@@ -125,6 +126,8 @@ main {
 }
 
 .scroll-top {
+    position: fixed;
+    bottom: 10px;
     display: flex;
     align-items: center;
     color: white;
@@ -138,11 +141,12 @@ main {
     font-weight: 400;
     font-style: normal;
     transition: all 300ms ease-in-out;
+    backdrop-filter: blur(10px);
 }
 
 .scroll-top:hover {
     color: #0B0C15;
-    border-color: #0B0C15;
+    border-color: transparent;
     scale: 1.1;
 }
 
@@ -162,13 +166,9 @@ main {
     background-color: var(--primary-accent);
 }
 
-/* User Page */
-.user-section {
-    width: 100%;
-    /* background-color: #FF6F52; */
-}
-
 .section-header {
+    position: relative;
+    width: fit-content;
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -182,77 +182,47 @@ main {
     font-style: normal;
     font-size: x-large;
     color: white;
+    background-color: rgba(255, 255, 255, 0.071);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 1px 20px;
+    margin-bottom: 30px;
+    z-index: 0;
 }
 
-/* Bibliography Page */
-.bib-section {
+.body-container {
     position: relative;
-    width: 100%;
-    margin-bottom: 1rem;
 }
 
-.bib-section a {
-    color: var(--primary-accent);
-}
-
-.bib-section .section-header {
-    position: relative;
-    width: fit-content;
-    margin-top: 0;
-}
-
-.bib-section .section-header::before {
-    content: "";
+.body-container::before {
     position: absolute;
-    left: 0;
-    top: 0;
-    background-color: var(--primary-accent);
-    width: 100%;
-    height: 50%;
-    mix-blend-mode: darken;
-}
-
-.bib-section .section-subheader {
-    position: relative;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    color: var(--light-grey);
-    font-size: 25px;
-    padding: 0 10px;
-}
-
-.bib-section .section-subheader::before {
     content: "";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border-left: 2px solid var(--primary-accent);
-    border-top: 2px solid var(--primary-accent);
-}
-
-.bib-section .section-body {
-    position: relative;
-    padding: 0 10px;
-}
-
-.bib-section .section-body::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -7px;
-    width: 50px;
-    height: 50px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
+    top: 15px;
+    bottom: 15px;
+    left: -5px;
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 /* Overall Capstone Page */
 .overall-section {
     width: 100%;
+}
+
+.overall-section .body-container::before {
+    background-color: var(--primary-color);
+}
+
+/* User Page */
+.user-section {
+    width: 100%;
+    /* background-color: #FF6F52; */
+}
+
+.user-section .body-container::before {
+    background-color: #53ee9d;
 }
 
 /* Capstone Experience Page */
@@ -271,22 +241,55 @@ main {
 .experience-section .section-body {
     display: flex;
     justify-content: space-between;
-}
-
-.experience-section .before {
-    width: 48%;
-}
-
-.experience-section .after {
-    width: 48%;
+    gap: 2rem;
+    background-color: transparent;
+    backdrop-filter: none;
+    padding: 0;
 }
 
 .experience-section img {
     border-radius: 10px;
 }
 
+.experience-section .before, 
+.experience-section .after,
+.experience-section .suggestions,
+.experience-section .route,
+.experience-section .google-maps {
+    background-color: rgba(255, 255, 255, 0.071);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 1px 20px;
+    z-index: 1;
+}
+
+.experience-section .body-container::before {
+    background-color: #80f586;
+}
+
+.experience-section #after-container::before {
+    background-color: var(--secondary-color);
+}
+
+#architectural-diagram .after,
+#login-signup .before{
+    height: 100%;
+}
+
 #architectural-diagram img {
     width: 100%;
+}
+
+#architectural-diagram img,
+#child-interface img,
+#parent-interface img,
+#login-signup img{
+    margin-bottom: 1rem;
+}
+
+#architectural-diagram .body-container,
+#login-signup .body-container {
+    width: 50%;
 }
 
 #child-interface .section-body,
@@ -315,8 +318,9 @@ main {
     width: 100%;
 }
 
+
 #child-interface .after img {
-    width: 34%;
+    width: 33%;
 }
 
 #parent-interface .before img {
@@ -354,4 +358,29 @@ main {
 
 #search-navigation .design {
     width: 30%;
+}
+
+/* Bibliography Page */
+.bib-section {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.bib-section a {
+    color: var(--primary-accent);
+}
+
+.bib-section .section-subheader {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--light-grey);
+    font-size: 25px;
+}
+
+.bib-section .body-container::before {
+    background-color: var(--primary-accent);
 }
